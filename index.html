@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniFood</title>
+</head>
+<style>
+    
+
+    .row{
+        max-width: 1140px;
+        margin: 0 auto;
+    
+    }
+
+    nav {
+        display: block;
+        unicode-bidi: isolate;
+    }
+    
+    .logo {
+        height: 100px;
+        width: auto;
+        float: left;
+    }
+
+    .logo-black{
+        display: none;
+        height: 50px;
+        width: auto;
+        float: left;
+        margin: 5px 0;
+    }
+
+    /* NAV */
+    .headlist{
+        float: right;
+        list-style: none;
+        margin-top: 55px;
+        
+    }
+
+    .headlist li a:hover {
+    border-bottom: 2px solid #e67622;
+}
+
+    .headlist li{
+        float: right;
+        list-style: none;
+        margin-top: 55px;
+        margin-right: 55px;
+        
+    }
+
+    .headlist li a:link, .headlist li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+    .headlist li a:hover, .headlist li a:active {
+    border-bottom: 2px solid #e67622;
+}
+    /* the heading of the firast section */
+    header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(hero.jpg);;
+        background-position: center;
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;  
+    }
+
+
+    h1 {
+        margin-top: 0; 
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 240%;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .herotextbox {
+        position: absolute;
+        width: 1140px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body{
+        background-color: white;
+        color: #555;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;    
+    }
+
+    .flex-container{
+        display: flex;
+        gap: 10px;
+    }
+        
+    
+    .flexbox-item-1{
+        background-color: orangered;
+        border: 9px solid orangered;
+        border-radius: 25px;
+        text-align: center;
+        min-width: 100px;
+        max-width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+        min-height: 50px;
+        max-height: 50px;
+    }
+    .flexbox-item-2{
+        border: 2px solid orangered;
+        min-width: 100px;
+        max-width: 100px;
+        border-radius: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        min-height: 50px;
+        max-height: 50px;
+        flex-wrap: wrap;
+    }
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 80px 0;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.long.para{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+
+/* Meal Photo */
+.section-meal{
+    padding: 0;
+}
+.mealshowcase{
+    list-style: none;
+    width: 100%;
+}
+
+.mealshowcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.00);
+}
+/* Heading */
+ h1, h2 {
+    font-weight: 300;
+    text-transform: uppercase;  
+ }
+
+ h2 {
+    font-size: 180%;
+   word-spacing: 2px;
+   text-align: center;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+ }
+
+h1{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67622;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+.column{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 50px;
+}
+
+.column1{
+    margin-right: 10px;
+}
+
+.column2{
+    margin-right: 10px;
+}
+
+.column3{
+    margin-right: 10px;
+}
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px;
+}
+
+.line{
+    text-align: center;
+    color: #e67e22;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.appscreen {
+    width: 40%;
+}
+.sectionstep{
+    background-color: #f4f4f4;
+}
+
+.step-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+    
+}
+
+.step-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.workstep{
+    margin-bottom: 50px;
+}
+
+.workstep:last-of-type {
+    margin-bottom: 50px;
+}
+
+.workstep div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+/* Buttons */
+.btnapp:link, .btnapp:visited{
+    border: 0;
+}
+
+.btnapp img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+/* Heading */
+ h1, h2 {
+    font-weight: 300;
+    text-transform: uppercase;  
+ }
+
+ h2 {
+    font-size: 180%;
+   word-spacing: 2px;
+   text-align: center;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+ }
+
+ h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67622;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+}
+
+/* .flex-container-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-container-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-container-three{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+
+.bordered-one{
+    border: 2px solid #e67622;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.bordered-two{
+    border: 2px solid #e67622;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.bordered-three{
+    border: 2px solid #e67622;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.cities{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.lisbon{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sanfran{
+    margin-right: 50px;
+    
+}
+
+.london{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+
+
+/* Buttons */
+.btn-full, .btn-ghost{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: #e67e22;
+    border: 1px solid #e67e27;
+    color: #fff;
+    margin-right: 15px
+}
+
+.btn-ghost {
+    border: 1px solid #e67e27;
+    color: #e67e27;
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid #e67e27;
+ }
+
+.btn-ghost:hover, .btn-ghost:active {
+    border: 1px solid #e67e27;
+    color: #fff;
+}
+/* Heading */
+ h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;  
+ }
+
+ h2 {
+    font-size: 180%;
+   word-spacing: 2px;
+   text-align: center;
+   margin-bottom: 30px;
+   letter-spacing: 1px;
+ }
+ 
+ h3 {
+   font-size: 110%;
+   margin-bottom: 15px;
+}
+
+h1{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67622;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Meal Plan */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.sectionplans {
+    background-color: #f4f4f4;
+}
+.planbox {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.planbox div{
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+
+.planbox div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.planbox div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.planprice {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.planprice span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.planprice-me {
+    font-size: 80%;
+}
+
+.planbox ul {
+    list-style: none;
+}
+
+.planbox ul li {
+    padding: 5px 0;
+}
+
+.column1 img{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+    float: left;
+}
+
+.column1{
+    margin-left: 50px;
+    margin-right: 75px; 
+    min-height: 400px;
+    max-height: 400px; 
+    min-width: 400px;
+    max-width: 400px;
+    color: white;
+} 
+
+.column2 img{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+    float: left;
+}
+
+.column2{
+    margin-right: 75px; 
+    min-height: 400px;
+    max-height: 400px; 
+    min-width: 400px;
+    max-width: 400px;
+    color: white;
+}
+
+.columns{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.column3 img{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 100%;
+    float: left;
+}
+
+.column3{
+    
+    margin-right: 50px; 
+    min-height: 400px;
+    max-height: 400px; 
+    min-width: 400px;
+    max-width: 400px;
+    color: white;
+} 
+
+.header{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+body{
+    background-image: url(foodphotos/back-customers.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+/* Footer */
+
+*{
+   max-width: 1920px;
+}
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footernav {
+    list-style: none;
+    float: left;
+}
+
+.sociallink {
+    list-style: none;
+    float: right;
+    
+}
+
+.footernav li, .sociallink li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footernav li:last-child{
+    margin-right: 0;
+}
+
+.sociallink li:last-child{
+    margin-right: 0;
+}
+
+.footernav li a:link, .footernav li a:visited, .sociallink li a:link,.sociallink li a:visited  {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    
+}
+
+/* .sociallinks li a:link,.sociallinks li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    font-size: 160%;
+} */
+
+.facebook, .twitter, .mail, .instagram{
+    transition: color 0.2s;
+} 
+
+.footernav li a:hover, .footernav li a:active {
+    color: #ddd;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #55acee;
+}
+
+.mail:hover {
+    color: #dd4b39;
+}
+
+.instagram:hover {
+    color: #bc2a8d;
+}
+
+footer p {
+    color: grey;
+    text-align: center;
+    margin-top: 20px;
+    min-width: 1377px;
+   
+}
+
+
+.user-text{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    font-size: 20px
+}
+
+.user-text label{
+    display: inline-block;
+    text-align: left;
+    width: 150px;
+}
+
+.user-text-1{
+    margin-bottom: 10px;
+}
+
+.user-text-2{
+    margin-bottom: 10px;
+}
+
+.user-text-3{
+    margin-bottom: 10px;
+}
+
+.user-text-4{
+    margin-bottom: 10px;
+}
+
+.user-text-5{
+    margin-bottom: 10px;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.user-text-6{
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 20px;
+}
+
+input[type="submit"]{
+    background-color: #e67e22; color: white; padding: 10px 20px; border-radius: 25px;
+}
+
+
+
+
+</style>
+<body>
+<header>
+    <nav>
+        <div class="row">
+            <img src="logo-white.png" alt="OmniFood Logo" class="logo">
+            <img src="logo.png" alt="logo black" class="logo-black">
+            <ul class="headlist">
+                <li><a href="">Food Delivery</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">Our cities</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="herotextbox">
+        <h1>Goodbye junk food. <br>Hello super healthy meals</h1>
+        
+    
+
+
+    
+        <div class="flex-container">
+    <div class="flexbox-item-1" style="color: white"><strong>I'm hungry</strong></div>
+    <div class="flexbox-item-2" style="color: orangered"><strong>Show me more</strong></div>
+    </div>
+</div>
+</header>
+
+ <div class="row">
+        <h2>GET FOOD FAST - NOT FAST FOOD</h2>
+        <p class="long-para">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
+    </div>
+
+   
+
+    <div class="column">
+    <div class="column1">
+        <ion-icon name="calendar-outline" class="icon-big"></ion-icon>
+        <h1>UP TO 365 DAYS/YEAR</h1>
+        <p>Never cook again! We really</p>
+        <p>mean that. Our subscription</p>
+        <p>plans include up to 365 days/year</p>
+        <p>coverage. You can also choose to</p>
+        <p>order more flexibly if that's your</p>
+        <p>style.</p>
+    </div>
+
+    <div class="column2">
+        <ion-icon name="timer-outline" class="icon-big"></ion-icon>
+        <h1>READY IN 20 MINUTES</h1>
+        <p>You're only twenty minutes away</p>
+        <p>from your delicious and super</p>
+        <p>healthy meals delivered right to</p>
+        <p>your home. We work with the</p>
+        <p>best chefs in each town to ensure</p>
+        <p>that you're 100% happy</p>
+    </div>
+
+    <div class="column3">
+        <ion-icon name="leaf-outline" class="icon-big"></ion-icon>
+        <h1>100% ORGANIC</h1>
+        <p>All our vegetables are fresh,</p>
+        <p>organic and local. Animals are</p>
+        <p>raised without added hormones</p>
+        <p>or antibiotics. Good for your</p>
+        <p>health, the environment, and it</p>
+        <p>also tastes better!</p>
+    </div>
+
+    <div class="column4">
+        <ion-icon name="checkmark-done-outline" class="icon-big"></ion-icon>
+        <h1>ORDER ANYTHING</h1>
+        <p>We don't limit your creativity,</p>
+        <p>which means you can order</p>
+        <p>whatever you feel like. You can</p>
+        <p>also choose from our menu</p>
+        <p>containing over 100 delicious</p>
+        <p>meals. It's up to you!</p>
+    </div>
+    </div>
+   </header>
+   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+   
+   <section class="section-meal">
+    <ul class="mealshowcase">
+        <li><figure class="meal-photo"><img src="2.jpg" alt=""></figure></li>
+        <li><figure class="meal-photo"><img src="2.jpg" alt=""></figure></li>
+        <li><figure class="meal-photo"><img src="3.jpg" alt=""></figure></li>
+        <li><figure class="meal-photo"><img src="4.jpg" alt=""></figure></li>
+    </ul>
+
+    <ul class="mealshowcase">
+        <li><figure class="meal-photo"><img src="5.jpg" alt=""></figure></li>
+        <li><figure class="meal-photo"><img src="6.jpg" alt=""></figure></li>
+        <li><figure class="meal-photo"><img src="7.jpg" alt=""></figure></li>
+        <li><figure class="meal-photo"><img src="8.jpg" alt=""></figure></li>
+    </ul>
+   </section>
+
+   <section class="sectionstep">
+        <div class="row">
+            <h2>How it works — Simple as 1, 2, 3</h2>
+        </div>
+        
+
+        <div class="row">
+        <div class="appscreen step-box">
+            <img src="app-iPhone.png" alt="Iphone">
+        </div>
+    
+        <div class="step-box">
+        <div class="flex-container-one workstep">
+            <div>1</div>
+            <p>Choose the subscription plan that best fits your needs and sign up today</p>
+        </div>
+
+        <div class="flex-container-two workstep">
+            <div>2</div>
+            <p>Order your delicious meal using our mobile app or website. Or you can even call us! </p>
+        </div>
+
+        <div class="flex-container-three workstep">
+            <div>3</div>
+            <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+        </div>
+
+        </div>
+        
+        
+
+    <a href="#" class="btnapp"><img src="download-app.svg" alt="app store button"></a>
+    <a href="#" class="btnapp"><img src="download-app-android.png" alt="play store button"></a>
+    </div>
+</section>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+    <h2 style="text-align:center;">WE'RE CURRENTLY IN THESE CITIES</h2>
+
+    <div class="cities">
+        <div class="lisbon">
+            <img src="lisbon-3.jpg" style="width: 250px; height: auto;">
+            <h3>LISBON</h3>
+            <ion-icon name="person"></ion-icon>
+            <p> 1600+ happy eaters</p>
+            <ion-icon name="star"></ion-icon>
+            <p> 60+ top chefs</p>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p> @omnifood_lx</p>
+        </div>
+
+        <div class="sanfran">
+            <img src="san-francisco.jpg" style="width: 250px; height: auto;">
+            <h3>SAN FRANCISCO</h3>
+            <ion-icon name="person"></ion-icon>
+            <p> 3700+ happy eaters</p>
+            <ion-icon name="star"></ion-icon>
+            <p> 160+ top chefs</p>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p> @omnifood_sf</p>
+        </div>
+
+        <div class="berlin">
+            <img src="berlin.jpg" style="width: 250px; height: auto;">
+            <h3>BERLIN</h3>
+            <ion-icon name="person"></ion-icon>
+            <p> 2300+ happy eaters</p>
+            <ion-icon name="star"></ion-icon>
+            <p> 110+ top chefs</p>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p> @omnifood_berlin</p>
+        </div>
+
+        <div class="london">
+            <img src="london.jpg" style="width: 250px; height: auto;">
+            <h3>LONDON</h3>
+            <ion-icon name="person"></ion-icon>
+            <p> 1200+ happy eaters</p>
+            <ion-icon name="star"></ion-icon>
+            <p> 50+ top chefs</p>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p> @omnifood_london</p>
+            
+        </div>
+    </div>
+
+    <div class="header">
+    <h1 style="color: white;">OUR CUSTOMERS CAN'T LIVE WITHOUT US</h1>
+    <p style="color: #e67e22;"><strong>____________</strong></p>
+</div>
+
+<div class="columns">
+    <div class="column1">
+        <h1>"</h1>
+        <p>Omnifood is just awesome! I just launched a startup which leaves me no time for cooking, so Omnifood is a life-saver. Now that i got used to it, I couldn't live without my daily meals!</p>
+        <img src="customer-1.jpg">
+        <p> Alberto Duncan</p>
+    </div>
+
+    <div class="column2">
+        <h1>"</h1>
+        <p>Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omnifood. Me and my family are so in love!</p>
+        <img src="customer-2.jpg">
+        <p> Joana Silva</p>
+    </div>
+
+    <div class="column3">
+        <h1>"</h1>
+        <p>I was looking for a quick and easy food delivery service in San francisco. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!</p>
+        <img src="customer-3.jpg">
+        <p> Milton Chapman</p>
+    </div>
+</div>
+
+
+    <section class="sectionplans">
+        <div class="row">
+            <h2>START EATING HEALTHY today</h2>
+        </div>
+
+        <!-- Premium Meal Plan -->
+        <div class="row">
+            <div class="planbox">
+                <div class="mealplan">
+                    <h3>Premium</h3>
+                    <p class="planprice">$399<span>/ month</span></p>
+                    <p class="planpricemeal">that's only 13.30$ per meal</p>
+                </div>
+                <!-- figure for Premium -->
+                 <div>
+                    <ul>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>1 meal every day</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>order 24/7</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>access to newest creations</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>Free delivery</li>
+                    </ul>
+                 </div>
+                 <!-- Sign up button -->
+                  <div>
+                    <button type="button" class="btn-full">Sign up now</button>
+                  </div>
+                  </div>
+        
+
+        <!-- Pro -->
+                <div class="planbox">
+                <div class="mealplan">
+                    <h3>Pro</h3>
+                    <p class="planprice">$149<span>/ month</span></p>
+                    <p class="planpricemeal">that's only 14.90$ per meal</p>
+                </div>
+                <!-- figure for pro -->
+                 <div>
+                    <ul>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>1 meal 10 day/month</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>order 24/7</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>access to newest creations</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>Free delivery</li>
+                    </ul>
+                 </div>
+                 <!-- Sign up pro -->
+                  <div>
+                    <button type="button" class="btn-ghost">Sign up now</button>
+                  </div>
+                  </div>
+
+
+                <!-- Starter -->
+                 <div class="planbox">
+                 <div class="mealplan">
+                    <h3>Starter</h3>
+                    <p class="planprice">$19<span>/ meal</span></p>
+                    <p class="planpricemeal"></p>
+                </div>
+                <!-- figure for Starter -->
+                 <div>
+                    <ul>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>1 meal</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>order from 8 am to 12 pm</li>
+                        <li><ion-icon name="close-outline"></ion-icon></li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon>Free delivery</li>
+                    </ul>
+                 </div>
+                 <!-- Sign up Starter -->
+                  <div>
+                    <button type="button" class="btn-ghost">Sign up now</button>
+                  </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="header">
+        <h1>WE'RE HAPPY TO HEAR FROM YOU</h1>
+        <p style="color: #e67e22;">________________</p>
+    </div>
+
+<div class="user-text">
+    <div class="user-text-1">
+        <div class="user-text-1">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+        </form>
+    </div>
+
+    <div class="user-text-2">
+        <form>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email">
+        </form>
+    </div>
+
+    <div class="user-text-3">
+        <label for="find">How Did You Find Us?</label>
+        <select name="find" id="find">
+        <option value="friends">Friends</option>
+        </select>
+    
+    </div>
+
+    <div class="user-text-4">
+        <label for="checkbox1">Newsletter?</label>
+        <input type="checkbox" id="checkbox1">
+    </div>
+
+    <div class="user-text-5">
+        <form>
+            <label for="message">Drop Us a Line</label>
+            <textarea id="message" name="message" rows="5" cols="40" placeholder="Type"></textarea>
+        </form>
+        </div>
+
+    <div class="user-text-6">
+        <input type="submit">
+    </div>
+    
+</div>
+        
+
+
+
+
+
+
+    <footer>
+        <div class="row">
+            <ul class="footernav">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">IOS App</a></li>
+                <li><a href="#">Android App</a></li>
+             </ul>
+
+             <ul class="sociallink">
+                <li><a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="mail-outline" class="mail"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
+             </ul>
+        </div>
+
+
+        
+        <div class="row">
+            <p>Copyright © 2015 by Omnifood. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</html>
